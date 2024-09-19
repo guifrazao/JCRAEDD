@@ -1,3 +1,9 @@
+"""
+2. O método de lista reverse inverte os elementos da lista. Defina uma função chamada
+reverse que inverte os elementos no argumento de lista (sem usar o método reverse).
+Tente tornar essa função a mais eficiente possível e indique sua complexidade
+computacional usando a notação big-O.
+"""
 def reverse(arr):
     comeco = 0
     fim = len(arr) - 1
