@@ -5,4 +5,4 @@ for i in range(0, n, 2): #n/2 + 1
         if v[i] < v[j]:
             print(i, j)
 
-#constantes e termos multiplicativos/divisórios não importam no pior, caso. Sendo assim, a complexidade é O(n²)
+#constantes e termos multiplicativos/divisórios não importam no pior caso. Sendo assim, a complexidade é O(n*n) = O(n²)
