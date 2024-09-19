@@ -1,6 +1,5 @@
 import time
 import random
-import matplotlib.pyplot as plt
 
 ''' 
 Dada a função abaixo, determine a complexidade:
@@ -51,13 +50,6 @@ def testar_complexidade():
 
         tempos.append(fim - inicio)
 
-    # Plotar o gráfico
-    plt.plot(tamanhos, tempos, marker='o')
-    plt.title('Complexidade Temporal da Função ache_min')
-    plt.xlabel('Tamanho do Array (n)')
-    plt.ylabel('Tempo de Execução (segundos)')
-    plt.grid(True)
-    plt.show()
 
 def main():
     testar_complexidade()
