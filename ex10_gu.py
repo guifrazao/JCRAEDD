@@ -57,11 +57,3 @@ execution_times = measure_execution_time(n_values)
 
 for n, t in zip(n_values, execution_times):
     print(f"n = {n}: tempo de execução = {t:.6f} segundos")
-
-# Plotando o gráfico
-plt.plot(n_values, execution_times, marker='o')
-plt.title('Complexidade de Tempo dos Loops Aninhados')
-plt.xlabel('Tamanho de n')
-plt.ylabel('Tempo de execução (segundos)')
-plt.grid(True)
-plt.show()
