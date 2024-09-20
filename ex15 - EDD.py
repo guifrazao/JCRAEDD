@@ -12,7 +12,7 @@ def inserir_nmr(vetor,num):
     vetor.insert(i,num)
     return vetor
 
-vetor_teste = ([1,2,3,4,6], 5)
+vetor_teste = inserir_nmr([1,2,3,4,6], 5)
 print(vetor_teste)
 
 """
