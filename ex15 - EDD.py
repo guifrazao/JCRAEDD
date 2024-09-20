@@ -11,6 +11,9 @@ def inserir_nmr(vetor,num):
         i += 1
     vetor.insert(i,num)
     return vetor
+
+vetor_teste = ([1,2,3,4,6], 5)
+print(vetor_teste)
 
 """
 Neste caso
