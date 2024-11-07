@@ -27,9 +27,9 @@ def menu():
              "3 - Mostrar números pares entre o primeiro e o último número cadastrado.\n" + 
              "4 - Excluir número.\n" +
              "0 - Sair.\n")
-        option = int(input("Enter your option:"))
+        option = int(input("Escolha uma opção:"))
         if(option < 0 or option > 3):
-            print("\tInvalid option!Enter again.")
+            print("\tOpção invalida. Escolha novamente.")
         
     return option
 
@@ -43,11 +43,11 @@ def main():
         choice = menu()
         
         if choice == 0:
-            print("Closing...\n")
+            print("Saindo...\n")
             break
         
         elif choice == 1:
-            myStack.push(input("Enter a number:"))
+            myStack.push(input("Insira um número:"))
         
         elif choice == 2:
             myStack.print()
