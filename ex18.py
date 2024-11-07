@@ -20,7 +20,7 @@ def swap(lst, i, j, counter):
     lst[j] = temp
     counter[0] += 1
 
-# selectionSort
+# selectionSort = encontra o menor elemento(índice) e coloca no início. 
 def selectionSort(lst):
     counter = [0]
     i = 0
@@ -36,7 +36,7 @@ def selectionSort(lst):
         i += 1
     return counter[0]
 
-# mergeSort
+# mergeSort = divide e conquista, mesclando pares ordenados
 def merge(lst, copyBuffer, low, middle, high, counter):
     i1 = low
     i2 = middle + 1
@@ -64,12 +64,12 @@ def mergeSortHelper(lst, copyBuffer, low, high, counter):
         merge(lst, copyBuffer, low, middle, high, counter)
 
 def mergeSort(lst):
-    counter = [0] # Note: Merge sort doesn't use swaps in the traditional sense
+    counter = [0] 
     copyBuffer = [0]*(len(lst))
     mergeSortHelper(lst, copyBuffer, 0, len(lst) - 1, counter)
     return counter[0]
 
-# quickSort
+#quicksort = escolhe um pivô e particiona o array
 def partition(lst, left, right, counter):
     middle = (left + right) // 2
     pivot = lst[middle]
