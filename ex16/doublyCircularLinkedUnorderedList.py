@@ -41,17 +41,6 @@ class DoublyCircularLinkedUnorderedList():
             current.next.previous = new_node
             current.next = new_node
     
-    def insert_after(self, previous, new_data):
-        if previous is None:
-            print("The given previous node must inLinkedList.")
-            return
-        
-        new_node = Node(new_data)
-        new_node.next = previous.next
-        previous.next = new_node
-        new_node.next.previous = new_node
-        new_node.previous = previous
-    
     def delete_front(self):
         if self.isEmpty():
             print("List is empty!!")
