@@ -7,9 +7,7 @@ considerando que, para ser aprovado, o aluno deve ter no mínimo média 7, liste
 ordem alfabética, os alunos reprovados. Em cada ordenação use um algoritmo
 diferente.
 """
-from quickSort import quicksort
-from mergeSort import mergeSort
-from insertionSort import insertionSort
+from modules import quickSort, mergeSort, insertionSort
 def cadastro():
     lista_alunos = []
     cadastrar = True
