@@ -27,9 +27,9 @@ def menu():
              "3 - Mostrar números pares entre o primeiro e o último número cadastrado.\n" + 
              "4 - Excluir número.\n" +
              "0 - Sair.\n")
-        option = int(input("Escolha uma opção:"))
+        option = int(input("Digite sua opção:"))
         if(option < 0 or option > 3):
-            print("\tOpção invalida. Escolha novamente.")
+            print("\tOpção inválida! Digite novamente.")
         
     return option
 
