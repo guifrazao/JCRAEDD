@@ -41,54 +41,6 @@ class DoublyCircularLinkedUnorderedList():
             current.next.previous = new_node
             current.next = new_node
     
-    def delete_front(self):
-        if self.isEmpty():
-            print("List is empty!!")
-        
-        elif self.head.next == self.head:
-            head = None
-        
-        else:
-            current = self.head.next
-            current.previous = self.head.previous
-            self.head.previous.next = current
-            self.head = None
-            self.head = current
-    
-    def delete_end(self):
-        if self.isEmpty():
-            print("List is Empty!!")
-        
-        elif self.head.next == self.head:
-            self.head = None
-        
-        else:
-            current = self.head
-            while current.next != self.head:
-                current = current.next
-
-            current.previous.next = current.next
-            current.next.previous = current.previous
-            current = None
-    
-    def delete_mid(self, data):
-        if self.isEmpty():
-            print("List is Empty!!")
-        else:
-            if(self.head.data == data):
-                self.delete_front()
-            else:
-                current = self.head.next
-                while(current.data != data):
-                    if(current == self.head):
-                        print("Entered Element Not Found in List!!")
-                        return
-                    current = current.next
-                
-                current.previous.next = current.next
-                current.next.previous = current.previous
-                current = None
-    
     def searchNode(self, data):
         if self.isEmpty():
             print("Empty list.")
