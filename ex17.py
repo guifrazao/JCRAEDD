@@ -23,7 +23,7 @@ def swap(lst, i, j):
     lst[i] = lst[j]
     lst[j] = temp
 
-#bubblesort
+#bubblesort = troca pares adacentes desordenados
 def bubbleSort(lst):
     n = len(lst)
     while n > 1:
@@ -37,7 +37,7 @@ def bubbleSort(lst):
         if not swapped: return
         n -= 1
 
-#insertionsort
+#insertionsort = ordena dados inserindo cada elemento em sua posição correta
 def insertionSort(lst):
     i = 1
     while i < len(lst):
@@ -52,7 +52,7 @@ def insertionSort(lst):
         lst[j + 1] = itemToInsert
         i += 1
 
-#quicksort
+#quicksort = escolhe um pivô e particiona o array
 def partition(lst, left, right):
     middle = (left + right) // 2
     pivot = lst[middle]
