@@ -1,3 +1,10 @@
+"""
+2. Implemente um programa estruturado e recursivo para pesquisa binária. Faça uma
+função de busca chamada pesquisaBR que receba como parâmetro o valor a ser
+encontrado e a referência do vetor onde a busca será efetuada. A função retornará -1,
+caso não encontre o item, ou retornará o índice, caso o encontre.
+"""
+
 def pesquisaBR_estruturado(target, sortedList):
     left = 0
     right = len(sortedList) - 1
