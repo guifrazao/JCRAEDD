@@ -1,3 +1,15 @@
+"""
+6. Faça um programa que cadastre n funcionários. Para cada funcionário devem ser
+cadastrados nome e salário. Os dados devem ser armazenados em uma lista
+simplesmente encadeada e ordenada, de forma decrescente, pelo salário do
+funcionário. Posteriormente, o programa de mostrar:
+a. O nome do funcionário que tem o maior salário (em caso de empate mostrar
+todos);
+b. A média salarial de todos os funcionários juntos;
+c. A quantidade de funcionários com salário superior a um valor fornecido pelo
+usuário. Caso nenhum funcionário satisfaça essa condição, mostrar
+mensagem.
+"""
 from orderedLinkedList import OrderedLinkedList
 
 def cadastro():
