@@ -1,3 +1,8 @@
+"""
+1. Defina uma função length (não len) que espera uma estrutura unicamente ligada
+como argumento. A função retorna o número de itens na estrutura.
+"""
+
 from unorderedLinkedList import UnorderedLinkedList
 def length(linkedList: UnorderedLinkedList):
     if linkedList.isEmpty():
